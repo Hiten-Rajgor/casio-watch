@@ -70,7 +70,7 @@
 		function timer() {
 		const CASIO = new Date();
 		var dayCount = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
-		var am = (CASIO.getHours() > 12) ? "PM" : "AM";
+		var am = (CASIO.getHours() >= 12) ? "PM" : "AM";
 		var hrs =  (CASIO.getHours() > 12) ? CASIO.getHours() - 12 : CASIO.getHours();
 		var out = (hrs<10) ? "0" + hrs : hrs;
 		var ten =  (CASIO.getDate() < 10) ? "0" + CASIO.getDate() : CASIO.getDate();
