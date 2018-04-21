@@ -12,42 +12,42 @@
     font-style: normal;
 
 }
-	html{height: 100%; margin: 0; padding: 0;}
-	body{display: flex;justify-content: center; height: 100%; align-items: center;margin: 0; padding: 0; font-family: digital-7regular, arial, sans-serif; color: #000;
-		background: rgba(224,224,224,1);
-		background: -moz-linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
-		background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(224,224,224,1)), color-stop(100%, rgba(255,255,255,1)));
-		background: -webkit-linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
-		background: -o-linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
-		background: -ms-linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
-		background: linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff', GradientType=1 );}
-	.watch{width: 330px;height: 315px; background: url('base-illus.png') center center no-repeat; position: relative; overflow: hidden;}
-	.tint{position: relative; top: -27px; left: 45px; background: url('base-illus-light.png') center center no-repeat; width: 244px; height: 212px; display: block;}
-	.clock{position: relative;overflow: hidden;top: 115px;width: 173px;margin: 0 auto;height: 75px;}
-	.clock .day{position: relative;left: 70px;font-size: 25px;top: 4px;}
-	.clock .date{position: relative; font-size: 25px;top: 4px; left: 117px;}
-	.clock .hrs, .mins, .sec{position: absolute;font-size: 53px;bottom: 0;}
-	.hrs{left: 28px;top: 25px; width: 61px;}
-	.mins{left: 86px;top: 25px;}
-	.sec{left: 137px;bottom: 5px; font-size: 33px; transition: .5s;}
-	.night{position: relative; top: 25px; font-size: 20px; left: -43px;}
-	.time{position: absolute;top: -50px;font-size: 80px; color: #999; font-family: arial; animation: left 5s ease-in-out infinite forwards;font-style: italic;font-weight: bold;}
-	@keyframes left{
-		0%{opacity: 0; transform: translateX(-140px);}
-		10%{opacity: 1;}
-		100%{transform: translateX(-90px); opacity: 0;}
-	}
-	.model{position: absolute;top: 120px; left: 50px;font-size: 80px; color: #999; font-family: arial; animation: right 5s ease-in-out infinite forwards;font-style: italic;font-weight: bold;}
-	@keyframes right{
-		0%{opacity: 0; transform: translateX(200px);}
-		10%{opacity: 1;}
-		100%{transform: translateX(250px); opacity: 0;}
-	}
-	.text-holder{position: relative;}
-	@media only screen and (max-width: 850px){
-		.time, .model{display: none;}
-	}
+html{height: 100%; margin: 0; padding: 0;}
+body{display: flex;justify-content: center; height: 100%; align-items: center;margin: 0; padding: 0; font-family: digital-7regular, arial, sans-serif; color: #000;
+	background: rgba(224,224,224,1);
+	background: -moz-linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(224,224,224,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff', GradientType=1 );}
+.watch{width: 330px;height: 315px; background: url('base-illus.png') center center no-repeat; position: relative; overflow: hidden;}
+.tint{position: relative; top: -27px; left: 45px; background: url('base-illus-light.png') center center no-repeat; width: 244px; height: 212px; display: block;}
+.clock{position: relative;overflow: hidden;top: 115px;width: 173px;margin: 0 auto;height: 75px;}
+.clock .day{position: relative;left: 70px;font-size: 25px;top: 4px;}
+.clock .date{position: relative; font-size: 25px;top: 4px; left: 117px;}
+.clock .hrs, .mins, .sec{position: absolute;font-size: 53px;bottom: 0;}
+.hrs{left: 28px;top: 25px; width: 61px;}
+.mins{left: 86px;top: 25px;}
+.sec{left: 137px;bottom: 5px; font-size: 33px; transition: .5s;}
+.night{position: relative; top: 25px; font-size: 20px; left: -43px;}
+.time{position: absolute;top: -50px;font-size: 80px; color: #999; font-family: arial; animation: left 5s ease-in-out infinite forwards;font-style: italic;font-weight: bold;}
+@keyframes left{
+	0%{opacity: 0; transform: translateX(-140px);}
+	10%{opacity: 1;}
+	100%{transform: translateX(-90px); opacity: 0;}
+}
+.model{position: absolute;top: 120px; left: 50px;font-size: 80px; color: #999; font-family: arial; animation: right 5s ease-in-out infinite forwards;font-style: italic;font-weight: bold;}
+@keyframes right{
+	0%{opacity: 0; transform: translateX(200px);}
+	10%{opacity: 1;}
+	100%{transform: translateX(250px); opacity: 0;}
+}
+.text-holder{position: relative;}
+@media only screen and (max-width: 850px){
+	.time, .model{display: none;}
+}
 </style>
 </head>
 <body>
