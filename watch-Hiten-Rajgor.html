@@ -29,11 +29,13 @@ body{display: flex;justify-content: center; height: 100%; align-items: center;ma
 .clock .day{position: relative;left: 70px;font-size: 25px;top: 4px;}
 .clock .date{position: relative; font-size: 25px;top: 4px; left: 117px;}
 .clock .hrs, .mins, .sec{position: absolute;font-size: 53px;bottom: 0;}
-.hrs{left: 28px;top: 25px; width: 61px;}
-.mins{left: 86px;top: 25px;}
-.sec{left: 137px;bottom: 5px; font-size: 33px; transition: .5s;}
-.night{position: relative; top: 25px; font-size: 20px; left: -50px;}
+.hrs{left: 28px; width: 61px;}
+.mins{left: 86px;}
+.sec{left: 137px;bottom: 4px; font-size: 33px; transition: .5s;}
+.night{position: relative; font-size: 20px;top: 7px; left: 5px;}
 .time{position: absolute;top: -50px;font-size: 80px; color: #999; font-family: arial; animation: left 5s ease-in-out infinite forwards;font-style: italic;font-weight: bold;}
+.dd{position: relative;overflow: hidden;height: 26px;}
+.mm{position: relative;overflow: hidden;height: 53px;}
 @keyframes left{
 	0%{opacity: 0; transform: translateX(-140px);}
 	10%{opacity: 1;}
@@ -57,12 +59,16 @@ body{display: flex;justify-content: center; height: 100%; align-items: center;ma
 		<p class="model">MONEY</p>
 		<div class="watch">
 			<div class="clock">
-				<span class="day"></span>
-				<span class="date"></span>
-				<span class="hrs"></span>
-				<span class="mins"></span>
-				<span class="sec"></span>
-				<span class="night"></span>
+				<div class="dd">
+					<span class="day"></span>
+					<span class="date"></span>
+				</div>
+				<div class="mm">
+					<span class="night"></span>
+					<span class="hrs"></span>
+					<span class="mins"></span>
+					<span class="sec"></span>
+				</div>
 			</div>
 			<span class="tint"></span>
 		</div>
